@@ -1,0 +1,20 @@
+{
+  "name": "travel-booking-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright test framework for a configurable travel booking application",
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:ci": "playwright test --project=chromium --workers=2 --retries=2 --forbid-only",
+    "test:all-browsers": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.15.30",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3"
+  }
+}
